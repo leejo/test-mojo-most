@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/leejo/test-mojo-most.svg?branch=master)](https://travis-ci.org/leejo/test-mojo-most)
+
 # NAME
 
 Test::Mojo::Most - Combine various [Test::Mojo](https://metacpan.org/pod/Test::Mojo) modules into one, a bit like
