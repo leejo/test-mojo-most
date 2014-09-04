@@ -11,6 +11,7 @@ WriteMakefile(
   VERSION_FROM  => 'lib/Test/Mojo/Most.pm',
   AUTHOR        => 'Lee Johnson <leejo@cpan.org>',
   LICENSE       => 'perl',
+  MIN_PERL_VERSION => '5.10.1',
   PREREQ_PM => {
     'Test::Mojo::Session' => 1.01,
     'Test::Mojo::More'    => 0.05,

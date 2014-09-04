@@ -8,7 +8,7 @@ use parent 'Test::Mojo::Session';
 use parent 'Test::Mojo::More';
 use parent 'Test::Mojo::Trim';
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 __END__
 

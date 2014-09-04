@@ -1,5 +1,11 @@
 Revision history for Test-Mojo-Most
 
+0.04     2014-09-04
+        - Bump min version requirement for perl to 5.10.1 as per Mojolicious
+
+0.03     2014-09-04
+        - Fix whitespace
+
 0.02     2014-09-04
         - Add Test::Mojo::Trim
         - Add MANIFEST
