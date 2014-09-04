@@ -6,8 +6,9 @@ use warnings;
 # if we use Mojo::Base we get redfined warnings, so use parent instead
 use parent 'Test::Mojo::Session';
 use parent 'Test::Mojo::More';
+use parent 'Test::Mojo::Trim';
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 __END__
 
@@ -31,6 +32,8 @@ L<Test::Most> but for Mojo
 		->session_has( ... )
 		# from Test::Mojo::More
 		->cookie_has( ... )
+        # from Test::Mojo::Trim
+        ->trimmed_content_is( ... )
 		# and so on
 	;
 
@@ -39,20 +42,29 @@ L<Test::Most> but for Mojo
 =head1 DESCRIPTION
 
 Test::Mojo::Most is an extension for L<Test::Mojo>, it inherits all methods
-from L<Test::Mojo>, L<Test::Mojo::Session>, and L<Test::Mojo::More>. It will
-add more Test::Mojo:: modules as they become available
+from L<Test::Mojo>, L<Test::Mojo::Session>, L<Test::Mojo::Trim>, and
+L<Test::Mojo::More>. It will add more Test::Mojo:: modules as they become
+available
 
 =head1 SEE ALSO
 
-L<Test::Mojo>, L<Test::Mojo::Session>, L<Test::Mojo::More>
+L<Test::Mojo>
+
+L<Test::Mojo::Session>
+
+L<Test::Mojo::More>
+
+L<Test::Mojo::Trim>
 
 =head1 AUTHOR INFORMATION
 
-Lee Johnson:
-	https://github.com/leejo
+Lee Johnson - C<leejo@cpan.org>
 
-This program is free software, you can redistribute it and/or modify it under
-the terms of the Artistic License version 2.0.
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself. If you would like to contribute documentation
+please raise an issue / pull request:
+
+    https://github.com/leejo/test-mojo-most
 
 =head1 BUGS
 

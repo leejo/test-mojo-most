@@ -12,11 +12,12 @@ WriteMakefile(
   AUTHOR        => 'Lee Johnson <leejo@cpan.org>',
   LICENSE       => 'perl',
   PREREQ_PM => {
-	'Test::Mojo::Session' => 1.01,
-	'Test::Mojo::More'    => 0.05
+    'Test::Mojo::Session' => 1.01,
+    'Test::Mojo::More'    => 0.05,
+    'Test::Mojo::Trim'    => 0.03,
   },
   BUILD_REQUIRES => {
-    'Mojolicious' => 4.24,
+    'Mojolicious' => 5.37,
     'Test::Most'  => 0.31,
   },
   META_MERGE => {

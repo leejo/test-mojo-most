@@ -16,6 +16,13 @@ get '/set' => sub {
 		->render(text => 'hello world');
 } => 'set';
 
+get '/trim' => sub {
+
+	return shift->render(
+		text => "<div>\n<h1>Header</h1>\n<p>A paragraph.</p>\n</div>"
+	);
+};
+
 my $t = Test::Mojo::Most->new;
 $t->get_ok('/set')
 	->status_is(200)
@@ -52,4 +59,9 @@ cmp_deeply(
 	'flash_hashref',
 );
 
+my $compared_to = qq{ <div><h1>Header</h1><p>A paragraph.</p></div> };
+ 
+$t->get_ok('/trim')->status_is(200)->trimmed_content_is($compared_to);
+
 done_testing();
+
