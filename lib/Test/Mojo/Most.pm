@@ -8,7 +8,7 @@ use parent 'Test::Mojo::Session';
 use parent 'Test::Mojo::More';
 use parent 'Test::Mojo::Trim';
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 __END__
 
@@ -32,8 +32,8 @@ L<Test::Most> but for Mojo
 		->session_has( ... )
 		# from Test::Mojo::More
 		->cookie_has( ... )
-        # from Test::Mojo::Trim
-        ->trimmed_content_is( ... )
+		# from Test::Mojo::Trim
+		->trimmed_content_is( ... )
 		# and so on
 	;
 
@@ -64,7 +64,7 @@ This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself. If you would like to contribute documentation
 please raise an issue / pull request:
 
-    https://github.com/leejo/test-mojo-most
+	https://github.com/leejo/test-mojo-most
 
 =head1 BUGS
 
