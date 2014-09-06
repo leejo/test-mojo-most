@@ -8,7 +8,7 @@ use parent 'Test::Mojo::Session';
 use parent 'Test::Mojo::More';
 use parent 'Test::Mojo::Trim';
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 __END__
 
@@ -59,6 +59,8 @@ L<Test::Mojo::Trim>
 =head1 AUTHOR INFORMATION
 
 Lee Johnson - C<leejo@cpan.org>
+
+=head1 LICENSE
 
 This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself. If you would like to contribute documentation

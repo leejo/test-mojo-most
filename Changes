@@ -1,5 +1,8 @@
 Revision history for Test-Mojo-Most
 
+0.05     2014-09-06
+        - Fix Kwalitee issues in distribution
+
 0.04     2014-09-04
         - Bump min version requirement for perl to 5.10.1 as per Mojolicious
 
