@@ -1,9 +1,14 @@
-[![Build Status](https://travis-ci.org/leejo/test-mojo-most.svg?branch=master)](https://travis-ci.org/leejo/test-mojo-most)
-
 # NAME
 
 Test::Mojo::Most - Combine various [Test::Mojo](https://metacpan.org/pod/Test::Mojo) modules into one, a bit like
 [Test::Most](https://metacpan.org/pod/Test::Most) but for Mojo
+
+<div>
+
+</div>
+
+<a href='https://travis-ci.org/leejo/test-mojo-most?branch=master'><img src='https://travis-ci.org/leejo/test-mojo-most.svg?branch=master' alt='Build Status' /></a>
+<a href='https://coveralls.io/r/leejo/test-mojo-most?branch=master'><img src='https://coveralls.io/repos/leejo/test-mojo-most/badge.png?branch=master' alt='Coverage Status' /></a>
 
 # SYNOPSIS
 
@@ -20,6 +25,8 @@ Test::Mojo::Most - Combine various [Test::Mojo](https://metacpan.org/pod/Test::M
                 ->session_has( ... )
                 # from Test::Mojo::More
                 ->cookie_has( ... )
+                # from Test::Mojo::Trim
+                ->trimmed_content_is( ... )
                 # and so on
         ;
 
@@ -28,20 +35,31 @@ Test::Mojo::Most - Combine various [Test::Mojo](https://metacpan.org/pod/Test::M
 # DESCRIPTION
 
 Test::Mojo::Most is an extension for [Test::Mojo](https://metacpan.org/pod/Test::Mojo), it inherits all methods
-from [Test::Mojo](https://metacpan.org/pod/Test::Mojo), [Test::Mojo::Session](https://metacpan.org/pod/Test::Mojo::Session), and [Test::Mojo::More](https://metacpan.org/pod/Test::Mojo::More). It will
-add more Test::Mojo:: modules as they become available
+from [Test::Mojo](https://metacpan.org/pod/Test::Mojo), [Test::Mojo::Session](https://metacpan.org/pod/Test::Mojo::Session), [Test::Mojo::Trim](https://metacpan.org/pod/Test::Mojo::Trim), and
+[Test::Mojo::More](https://metacpan.org/pod/Test::Mojo::More). It will add more Test::Mojo:: modules as they become
+available
 
 # SEE ALSO
 
-[Test::Mojo](https://metacpan.org/pod/Test::Mojo), [Test::Mojo::Session](https://metacpan.org/pod/Test::Mojo::Session), [Test::Mojo::More](https://metacpan.org/pod/Test::Mojo::More)
+[Test::Mojo](https://metacpan.org/pod/Test::Mojo)
+
+[Test::Mojo::Session](https://metacpan.org/pod/Test::Mojo::Session)
+
+[Test::Mojo::More](https://metacpan.org/pod/Test::Mojo::More)
+
+[Test::Mojo::Trim](https://metacpan.org/pod/Test::Mojo::Trim)
 
 # AUTHOR INFORMATION
 
-Lee Johnson:
-	https://github.com/leejo
+Lee Johnson - `leejo@cpan.org`
 
-This program is free software, you can redistribute it and/or modify it under
-the terms of the Artistic License version 2.0.
+# LICENSE
+
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself. If you would like to contribute documentation
+please raise an issue / pull request:
+
+        https://github.com/leejo/test-mojo-most
 
 # BUGS
 

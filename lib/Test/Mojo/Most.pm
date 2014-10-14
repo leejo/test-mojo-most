@@ -17,6 +17,11 @@ __END__
 Test::Mojo::Most - Combine various L<Test::Mojo> modules into one, a bit like
 L<Test::Most> but for Mojo
 
+=for html
+
+<a href='https://travis-ci.org/leejo/test-mojo-most?branch=master'><img src='https://travis-ci.org/leejo/test-mojo-most.svg?branch=master' alt='Build Status' /></a>
+<a href='https://coveralls.io/r/leejo/test-mojo-most?branch=master'><img src='https://coveralls.io/repos/leejo/test-mojo-most/badge.png?branch=master' alt='Coverage Status' /></a>
+
 =head1 SYNOPSIS
 
 	use strict;
