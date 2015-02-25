@@ -13,7 +13,7 @@ WriteMakefile(
   LICENSE       => 'perl',
   MIN_PERL_VERSION => '5.10.1',
   PREREQ_PM => {
-    'Test::Mojo::Session' => 1.01,
+    'Test::Mojo::Session' => 1.03,
     'Test::Mojo::More'    => 0.05,
     'Test::Mojo::Trim'    => 0.03,
   },

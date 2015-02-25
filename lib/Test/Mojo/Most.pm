@@ -8,7 +8,27 @@ use parent 'Test::Mojo::Session';
 use parent 'Test::Mojo::More';
 use parent 'Test::Mojo::Trim';
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
+
+sub _cookie {
+    my ( $self,$name ) = @_;
+    foreach my $cookie ( $self->ua->cookie_jar->all ) {
+        return $cookie if $cookie->name eq $name;
+    }
+    return;
+}
+
+sub _session {
+	return shift->_extract_session;
+}
+
+sub _flash {
+	return shift->_cookie( @_ ) if @_ == 2;
+	return {};
+}
+
+sub cookie_hashref { return { map { $_->name => $_->value } @{ $_[0]->tx->res->cookies } } }
+sub flash_hashref  { return $_[0]->_session->{flash} || $_[0]->_session->{new_flash} || {} }
 
 __END__
 
@@ -48,7 +68,10 @@ L<Test::Most> but for Mojo
 Test::Mojo::Most is an extension for L<Test::Mojo>, it inherits all methods
 from L<Test::Mojo>, L<Test::Mojo::Session>, L<Test::Mojo::Trim>, and
 L<Test::Mojo::More>. It will add more Test::Mojo:: modules as they become
-available
+available.
+
+This module also fixes L<Test::Mojo::More> to use the correct values when
+retrieving the cookies / session / flash values
 
 =head1 SEE ALSO
 

@@ -1,5 +1,9 @@
 Revision history for Test-Mojo-Most
 
+0.06     2015-02-25
+        - Fix to work with v6 of Mojolicious - involves overriding some of
+          the methods used by Test::Mojo::More
+
 0.05     2014-09-06
         - Fix Kwalitee issues in distribution
 
