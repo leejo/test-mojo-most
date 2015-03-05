@@ -5,10 +5,9 @@ Test::Mojo::Most - Combine various [Test::Mojo](https://metacpan.org/pod/Test::M
 
 <div>
 
+    <a href='https://travis-ci.org/leejo/test-mojo-most?branch=master'><img src='https://travis-ci.org/leejo/test-mojo-most.svg?branch=master' alt='Build Status' /></a>
+    <a href='https://coveralls.io/r/leejo/test-mojo-most?branch=master'><img src='https://coveralls.io/repos/leejo/test-mojo-most/badge.png?branch=master' alt='Coverage Status' /></a>
 </div>
-
-<a href='https://travis-ci.org/leejo/test-mojo-most?branch=master'><img src='https://travis-ci.org/leejo/test-mojo-most.svg?branch=master' alt='Build Status' /></a>
-<a href='https://coveralls.io/r/leejo/test-mojo-most?branch=master'><img src='https://coveralls.io/repos/leejo/test-mojo-most/badge.png?branch=master' alt='Coverage Status' /></a>
 
 # SYNOPSIS
 
@@ -37,7 +36,10 @@ Test::Mojo::Most - Combine various [Test::Mojo](https://metacpan.org/pod/Test::M
 Test::Mojo::Most is an extension for [Test::Mojo](https://metacpan.org/pod/Test::Mojo), it inherits all methods
 from [Test::Mojo](https://metacpan.org/pod/Test::Mojo), [Test::Mojo::Session](https://metacpan.org/pod/Test::Mojo::Session), [Test::Mojo::Trim](https://metacpan.org/pod/Test::Mojo::Trim), and
 [Test::Mojo::More](https://metacpan.org/pod/Test::Mojo::More). It will add more Test::Mojo:: modules as they become
-available
+available.
+
+This module also fixes [Test::Mojo::More](https://metacpan.org/pod/Test::Mojo::More) to use the correct values when
+retrieving the cookies / session / flash values
 
 # SEE ALSO
 
