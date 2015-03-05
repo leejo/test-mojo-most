@@ -12,19 +12,24 @@ our $VERSION = '0.06';
 
 sub _cookie {
     my ( $self,$name ) = @_;
-    foreach my $cookie ( $self->ua->cookie_jar->all ) {
+
+    my @cookies = $self->ua->cookie_jar->all;
+	@cookies = @{$cookies[0]} if ref $cookies[0] eq 'ARRAY';
+
+    foreach my $cookie ( @cookies ) {
         return $cookie if $cookie->name eq $name;
     }
     return;
 }
 
 sub _session {
+	# _extract_session from Test::Mojo::Session
 	return shift->_extract_session;
 }
 
 sub _flash {
-	return shift->_cookie( @_ ) if @_ == 2;
-	return {};
+	return $_[0]->app->flash( $_[1] ) if @_ == 2;
+	{};
 }
 
 sub cookie_hashref { return { map { $_->name => $_->value } @{ $_[0]->tx->res->cookies } } }

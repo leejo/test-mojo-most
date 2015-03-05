@@ -14,7 +14,7 @@ get '/set' => sub {
 		->cookie('chocolate' => 'chip')
 		->flash('flash!' => 'AAAAaaaa')
 		->render(text => 'hello world');
-} => 'set';
+};
 
 get '/trim' => sub {
 
