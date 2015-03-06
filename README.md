@@ -1,7 +1,6 @@
 # NAME
 
-Test::Mojo::Most - Combine various [Test::Mojo](https://metacpan.org/pod/Test::Mojo) modules into one, a bit like
-[Test::Most](https://metacpan.org/pod/Test::Most) but for Mojo
+Test::Mojo::Most - This module is DEPRECATED
 
 <div>
 
@@ -9,47 +8,16 @@ Test::Mojo::Most - Combine various [Test::Mojo](https://metacpan.org/pod/Test::M
     <a href='https://coveralls.io/r/leejo/test-mojo-most?branch=master'><img src='https://coveralls.io/repos/leejo/test-mojo-most/badge.png?branch=master' alt='Coverage Status' /></a>
 </div>
 
-# SYNOPSIS
-
-        use strict;
-        use warnings;
-        use Test::Most;
-        use Test::Mojo::Most;
-
-        my $t = Test::Mojo::Most->new;
-        $t->get_ok( ... )
-                # from Test::Mojo
-                ->status_is( ... )
-                # from Test::Mojo::Session
-                ->session_has( ... )
-                # from Test::Mojo::More
-                ->cookie_has( ... )
-                # from Test::Mojo::Trim
-                ->trimmed_content_is( ... )
-                # and so on
-        ;
-
-        done_testing();
-
 # DESCRIPTION
 
-Test::Mojo::Most is an extension for [Test::Mojo](https://metacpan.org/pod/Test::Mojo), it inherits all methods
-from [Test::Mojo](https://metacpan.org/pod/Test::Mojo), [Test::Mojo::Session](https://metacpan.org/pod/Test::Mojo::Session), [Test::Mojo::Trim](https://metacpan.org/pod/Test::Mojo::Trim), and
-[Test::Mojo::More](https://metacpan.org/pod/Test::Mojo::More). It will add more Test::Mojo:: modules as they become
-available.
-
-This module also fixes [Test::Mojo::More](https://metacpan.org/pod/Test::Mojo::More) to use the correct values when
-retrieving the cookies / session / flash values
+Test::Mojo::Most was an extension for [Test::Mojo](https://metacpan.org/pod/Test::Mojo) but no longer does anything.
+If you want to extend Test::Mojo you should look at [Test::Mojo::WithRoles](https://metacpan.org/pod/Test::Mojo::WithRoles).
 
 # SEE ALSO
 
 [Test::Mojo](https://metacpan.org/pod/Test::Mojo)
 
-[Test::Mojo::Session](https://metacpan.org/pod/Test::Mojo::Session)
-
-[Test::Mojo::More](https://metacpan.org/pod/Test::Mojo::More)
-
-[Test::Mojo::Trim](https://metacpan.org/pod/Test::Mojo::Trim)
+[Test::Mojo::WithRoles](https://metacpan.org/pod/Test::Mojo::WithRoles)
 
 # AUTHOR INFORMATION
 

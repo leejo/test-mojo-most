@@ -2,7 +2,6 @@ Makefile.PL
 MANIFEST
 lib/Test/Mojo/Most.pm
 t/001_compiles_pod.t
-t/002_functions.t
 t/003_changes.t
 README.md
 Changes

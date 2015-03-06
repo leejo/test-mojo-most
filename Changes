@@ -1,5 +1,9 @@
 Revision history for Test-Mojo-Most
 
+0.07     2015-03-06
+        - This entire dist has been DEPRECATED
+        - look at Test::Mojo::WithRoles instead
+
 0.06     2015-02-25
         - Fix to work with v6 of Mojolicious - involves overriding some of
           the methods used by Test::Mojo::More
